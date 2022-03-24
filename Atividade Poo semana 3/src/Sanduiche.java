@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Sanduiche {
@@ -98,6 +99,8 @@ public class Sanduiche {
 
     public static void main(String[] args) {
 
+
+
         System.out.println("SISTEMA DE REDE DE RESTAUTANTES BOB'S OU SUBWAY\n");
 
 
@@ -170,9 +173,22 @@ public class Sanduiche {
 
         System.out.println("\nb)"+"\nComparando String (nomeSanduiche) de s e s2 de Q1: \n"+pedido.comparaString);
 
+        ArrayList<Sanduiche> sanduiches = new ArrayList<Sanduiche>();
+        sanduiches.add(new Sanduiche("Frango","Medio"));
+        //sanduiches.add(21);
+        mostrar(sanduiches);
+
+
+
+
 
         sc.close();
 
 
     }
-}
+    public static void mostrar (ArrayList<Sanduiche> lista) {
+        for (Sanduiche i: lista) {
+            System.out.println(i.nomeSanduiche);
+        }
+    }
+ }
