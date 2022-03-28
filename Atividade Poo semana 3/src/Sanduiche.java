@@ -94,7 +94,16 @@ public class Sanduiche {
         }
     }
 
+    static void carro(Sanduiche sanduiche){
+        System.out.println(sanduiche.nomeSanduiche);
 
+    }
+    static void carro(String nome){
+       Sanduiche s = new Sanduiche("dsa");
+       s.nomeSanduiche = nome;
+        System.out.println(s.nomeSanduiche);
+
+    }
 
 
     public static void main(String[] args) {
@@ -186,7 +195,7 @@ public class Sanduiche {
 
 
     }
-    public static void mostrar (ArrayList<Sanduiche> lista) {
+     static void mostrar (ArrayList<Sanduiche> lista) {
         for (Sanduiche i: lista) {
             System.out.println(i.nomeSanduiche);
         }

@@ -101,5 +101,9 @@ public class Sanduiche {
                 ", preco: R$" + preco;
     }
 
+    public static void main(String[] args) {
+
+    }
+
 
 }
