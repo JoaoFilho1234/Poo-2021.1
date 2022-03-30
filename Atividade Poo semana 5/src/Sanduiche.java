@@ -94,6 +94,32 @@ public class Sanduiche {
         }
     }
 
+    // 1 - Crie um método.
+    // a) Deve ser um método estático.
+    // b) Este método deve utilizar passagem de parâmetros por referência (tipo
+    //referenciado).
+    // c) Mostre a alteração dos valores dos atributos do parâmetro (objeto) dentro do
+    //método persiste mesmo depois que a execução do método é encerrada. Exiba o código e
+    //as saídas do programa no relatório.
+
+    public static void nomeSanduiche(Sanduiche sanduiche) {
+        sanduiche.nomeSanduiche = "Bob's Frango Artesanal";
+        System.out.println("Dentro do metodo: "+sanduiche.nomeSanduiche);
+    }
+
+    // 2 - Crie um método.
+    // a) Utilize sobrecarga de métodos. Crie outro método com o mesmo nome do
+    //método da questão anterior porém com parâmetros diferentes.
+    // b) Este método deve utilizar passagem de parâmetros por valor (tipo primitivo).
+    // c) Mostre que a alteração do valor o parâmetro dentro do método não persiste
+    //após o final da execução do método. Exiba o código e as saídas do programa no
+    //relatório.
+
+    public static void nomeSanduiche(String nome) {
+        nome = "Big Bob Frango";
+        System.out.println("Dentro do metodo: "+nome);
+    }
+
     @Override
     public String toString() {
         return "Sanduiche encontrado: " + nomeSanduiche   +
@@ -103,6 +129,20 @@ public class Sanduiche {
 
     public static void main(String[] args) {
 
+
+        System.out.println("=*=*=*=*=*=*=*=*=*=* METODO COM PASSAGEM POR REFERENCIA =*=*=*=*=*=*=*=*=*=*\n");
+
+        Sanduiche sanduiche = new Sanduiche("Costela Artesanal");
+        System.out.println("Antes: "+sanduiche.nomeSanduiche);
+        Sanduiche.nomeSanduiche(sanduiche);
+        System.out.println("Depois: "+sanduiche.nomeSanduiche);
+
+        System.out.println("\n=*=*=*=*=*=*=*=*=*=* METODO COM PASSAGEM POR VALOR =*=*=*=*=*=*=*=*=*=*\n");
+
+        Sanduiche sanduiche2 = new Sanduiche("Tentador Zero Beef");
+        System.out.println("Antes: "+sanduiche2.nomeSanduiche);
+        Sanduiche.nomeSanduiche(sanduiche2.nomeSanduiche);
+        System.out.println("Depois: "+sanduiche2.nomeSanduiche);
     }
 
 
