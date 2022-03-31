@@ -1,6 +1,4 @@
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Scanner;
+
 
 public class Sanduiche {
 
@@ -129,6 +127,9 @@ public class Sanduiche {
 
     public static void main(String[] args) {
 
+        System.out.println("SISTEMA DE CADEIA DE RESTAURANTES BOB'S\n");
+
+        System.out.println("---------- QUESTAO 1 ----------\n");
 
         System.out.println("=*=*=*=*=*=*=*=*=*=* METODO COM PASSAGEM POR REFERENCIA =*=*=*=*=*=*=*=*=*=*\n");
 
@@ -137,7 +138,9 @@ public class Sanduiche {
         Sanduiche.nomeSanduiche(sanduiche);
         System.out.println("Depois: "+sanduiche.nomeSanduiche);
 
-        System.out.println("\n=*=*=*=*=*=*=*=*=*=* METODO COM PASSAGEM POR VALOR =*=*=*=*=*=*=*=*=*=*\n");
+        System.out.println("\n---------- QUESTAO 2 ----------\n");
+
+        System.out.println("=*=*=*=*=*=*=*=*=*=* METODO COM PASSAGEM POR VALOR =*=*=*=*=*=*=*=*=*=*\n");
 
         Sanduiche sanduiche2 = new Sanduiche("Tentador Zero Beef");
         System.out.println("Antes: "+sanduiche2.nomeSanduiche);
