@@ -1,10 +1,17 @@
+// I - Crie uma classe:
+// a) (14 pontos) A classe deve ter um pacote cujo nome está relacionado ao projeto.
+// b) (14 pontos) A classe deve ter um atributo público.
+// c) (14 pontos) A classe deve ter um atributo privado.
+// d) (14 pontos) A classe deve ter um atributo com modificador de acesso default.
+
 package br.com.bobs.cardapio.Sobremesas;
+
 
 public class Sobremesa {
 
-    public String nomeSobremesa;
-    private double desconto;
-    double preco;
+    public String nomeSobremesa; // atributo publico
+    private double preco;    // atributo privado
+    double desconto;               // atributo default
 
 
     public String getNomeSobremesa() {
@@ -25,6 +32,7 @@ public class Sobremesa {
     }
 
     public double getPreco() {
+
         return preco;
     }
 
@@ -37,9 +45,13 @@ public class Sobremesa {
     }
 
     public void setDesconto(double desconto) {
-        this.desconto = getPreco() * (desconto / 100);
-        this.preco = getPreco() - getDesconto();
+        if (desconto <= 100) {
+            this.desconto = getPreco() * (desconto / 100);
+            setPreco(getPreco() - getDesconto());
+        }
+        else {
+            System.out.println("Nao eh possivel dar desconto maior que 100%!");
+        }
     }
-
 
 }
