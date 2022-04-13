@@ -6,6 +6,7 @@ public class Sobremesa {
     double desconto;               // atributo default
     int quantidade;
 
+    // Contrutor classe Sobremesa
     public Sobremesa(String nomeSobremesa, int quantidade) {
 
         setNomeSobremesa(nomeSobremesa);
