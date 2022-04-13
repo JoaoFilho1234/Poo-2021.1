@@ -4,12 +4,16 @@ public class Sobremesa {
     public String nomeSobremesa; // atributo publico
     private double preco;    // atributo privado
     double desconto;               // atributo default
+    int quantidade;
 
-    public Sobremesa(String nomeSobremesa) {
+    public Sobremesa(String nomeSobremesa, int quantidade) {
+
         setNomeSobremesa(nomeSobremesa);
+        setQuantidade(quantidade);
     }
 
     public String getNomeSobremesa() {
+
         return nomeSobremesa;
     }
 
@@ -32,11 +36,21 @@ public class Sobremesa {
     }
 
     public void setPreco(double preco) {
+
         this.preco = preco;
     }
 
     public double getDesconto() {
+
         return desconto;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 
     public void setDesconto(double desconto) {
