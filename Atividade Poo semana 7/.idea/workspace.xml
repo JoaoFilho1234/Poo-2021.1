@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="19f3c985-c14f-4bbe-9a7f-f948f887aeb6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Atividade Poo semana 6/src/br/com/bobs/cardapio/Sobremesas/Sundae.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Atividade Poo semana 6/src/br/com/bobs/cardapio/Sobremesas/Sundae.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/Atividade monitoria 7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/Diagrama UML questao 4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/Explicação questão 2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/out/production/Atividade monitoria 7/questao1/CorridaCarros.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/out/production/Atividade monitoria 7/questao1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/out/production/Atividade monitoria 7/questao1/Taxi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/out/production/Atividade monitoria 7/questao1/Uber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/out/production/Atividade monitoria 7/questao2/MotoBoy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/out/production/Atividade monitoria 7/questao4/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/out/production/Atividade monitoria 7/questao4/Paralelogramo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/out/production/Atividade monitoria 7/questao4/Ponto2D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/out/production/Atividade monitoria 7/questao4/Quadrado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/out/production/Atividade monitoria 7/questao4/Quadrilatero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/out/production/Atividade monitoria 7/questao4/Retangulo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/out/production/Atividade monitoria 7/questao4/Trapezio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/questao 2.odt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/questao 2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/src/questao1/CorridaCarros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/src/questao1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/src/questao1/Taxi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/src/questao1/Uber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/src/questao2/MotoBoy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/src/questao4/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/src/questao4/Paralelogramo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/src/questao4/Ponto2D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/src/questao4/Quadrado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/src/questao4/Quadrilatero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/src/questao4/Retangulo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade monitoria 7/src/questao4/Trapezio.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="27iQnvZV1ULlYW8Q7l6Ib0ndn0s" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/joao/Documentos/POO 2022.1/Atividade Poo semana 7&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Sundae" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.bobs.cardapio.Sobremesas.Sundae" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.bobs.cardapio.Sobremesas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Sundae" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="19f3c985-c14f-4bbe-9a7f-f948f887aeb6" name="Changes" comment="" />
+      <created>1649800596327</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649800596327</updated>
+    </task>
+    <servers />
+  </component>
+</project>
