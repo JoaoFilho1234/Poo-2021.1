@@ -1,9 +1,9 @@
 package atividade8;
 
-public class Nugetts extends Acompanhamento{
+public class Nuggets extends Acompanhamento{
 
-    public Nugetts(String nome) {
-        super(nome);
+    public Nuggets(String nome, String tamanho) {
+        super(nome,tamanho);
     }
 
     @Override

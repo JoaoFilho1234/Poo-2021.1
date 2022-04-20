@@ -5,14 +5,22 @@ public abstract class Acompanhamento {
 
     private String nome;
     private double preco;
-    private int quantidade;
+    private String tamanho;
 
-    public Acompanhamento(String nome){
+    public Acompanhamento(String nome, String tamanho){
         setNome(nome);
+        setTamanho(tamanho);
         if(nome.equals("Batata Palito")){
             setPreco(3.99);
         } else{
             setPreco(9.99);
+        }
+        if(getTamanho().equals("Pequeno")) {
+            this.preco += 2.99;
+        } else if (getTamanho().equals("Medio")) {
+            this.preco += 4.99;
+        } else {
+            setPreco(getPreco() + 6.99);
         }
 
     }
@@ -35,11 +43,11 @@ public abstract class Acompanhamento {
         this.preco = preco;
     }
 
-    public int getQuantidade() {
-        return quantidade;
+    public String getTamanho() {
+        return tamanho;
     }
 
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
+    public void setTamanho(String tamanho) {
+        this.tamanho = tamanho;
     }
 }
