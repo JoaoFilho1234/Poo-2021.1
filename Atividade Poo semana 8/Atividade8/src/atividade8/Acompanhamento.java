@@ -1,6 +1,8 @@
 package atividade8;
 
-
+// I - Crie a Classe1 com um nome relacionado ao seu projeto:
+//a) Deve ser uma classe abstrata;
+//b) Deve ter método abstrato.
 public abstract class Acompanhamento {
 
     private String nome;
@@ -25,7 +27,7 @@ public abstract class Acompanhamento {
 
     }
 
-    public abstract void adicional();
+    public abstract void adicional(); // Metodo abstrato
 
     public String getNome() {
         return nome;
