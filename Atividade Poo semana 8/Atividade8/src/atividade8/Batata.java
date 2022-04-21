@@ -11,10 +11,10 @@ public class Batata extends Acompanhamento{
     @Override
     public void adicional() {
         if(getNome().equals("Batata Palito")) {
-            setNome(getNome() + " ,Adicional: Cheddar com Bacon");
+            setNome(getNome() + " + Cheddar com Bacon");
             setPreco(getPreco() + 4.99);
         } else {
-            setNome(getNome() + " ,Adicional: Tirinhas de Frango Empanado");
+            setNome(getNome() + " + Tirinhas de Frango Empanado");
             setPreco(getPreco() + 7.99);
         }
     }

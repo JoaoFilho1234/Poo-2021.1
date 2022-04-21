@@ -11,16 +11,17 @@ public class Main {
         //abstrato para cada elemento do ArrayList.
 
         ArrayList<Acompanhamento> acompanhamentos = new ArrayList<Acompanhamento>();
-        System.out.println("Repositorio Acompanhamentos\n");
+        System.out.println("Acompanhamentos\n");
         acompanhamentos.add(new Batata("Batata Palito","Pequeno"));
-        acompanhamentos.add(new Nuggets("Nuggtts","Medio"));
+        acompanhamentos.add(new Nuggets("Nuggets de Frango","Medio"));
         acompanhamentos.add(new Batata("Batata Rustica","Grande"));
+        acompanhamentos.add(new Nuggets("Nuggets de Queijo","Pequeno"));
 
         for (Acompanhamento i: acompanhamentos) {
             System.out.println("Nome: "+i.getNome()+", Tamanho: "+i.getTamanho()+", Preço: "+i.getPreco());
         }
 
-        System.out.println("\nRepositorio Acompanhamentos Modificado com o Adicional e Atualização do Preco\n");
+        System.out.println("\nAcompanhamentos Modificado com o Método Abstrato adicional e Atualização do Preco\n");
 
         for (Acompanhamento i: acompanhamentos) {
             i.adicional();

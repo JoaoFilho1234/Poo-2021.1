@@ -12,10 +12,10 @@ public class Nuggets extends Acompanhamento{
     @Override
     public void adicional() {
         if(getNome().equals("Nuggets de Frango")) {
-            setNome(getNome() + " ,Adicional: Molho Caipira");
+            setNome(getNome() + " + Molho Caipira");
             setPreco(getPreco() + 3.99);
         } else {
-            setNome(getNome() + " ,Adicional: Molho Barbecue");
+            setNome(getNome() + " + Molho Barbecue");
             setPreco(getPreco() + 3.99);
         }
     }
