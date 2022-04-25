@@ -8,7 +8,7 @@ public class AtletaCorrida extends Atleta implements Correr{
 
     @Override
     public void correr() {
-        System.out.println("O Atleta "+getNome()+" Está correndo");
+        System.out.println("O Corredor "+getNome()+" Está correndo");
 
     }
 }

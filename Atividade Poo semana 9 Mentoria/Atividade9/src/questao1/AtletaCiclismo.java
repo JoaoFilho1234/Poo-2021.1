@@ -8,6 +8,6 @@ public class AtletaCiclismo extends Atleta implements Pedalar{
 
     @Override
     public void pedalar() {
-        System.out.println("O Atleta "+getNome()+" Está pedalando");
+        System.out.println("O Ciclista "+getNome()+" Está pedalando");
     }
 }

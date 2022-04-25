@@ -2,8 +2,11 @@ package atividade9;
 
 import java.util.Arrays;
 
+// 1. Utilizando uma classe básica do seu projeto:
+//a) Faça com que uma classe do seu projeto implemente a interface
+//java.lang.Comparable.
 public class Pedido implements Comparable<Pedido>{
-    // I - Atributos de no minimo três tipos distintos.
+
     String cliente;
     String lanche;
     Double valorPedido;
@@ -17,8 +20,6 @@ public class Pedido implements Comparable<Pedido>{
         addLanche(nomeLanche);
     }
 
-    // II - Defina pelo menos DOIS métodos SEM RETORNO que atualizem os
-    //valores dos atributos de forma ENCAPSULADA.
 
     void numeroItensPedidos() {
         numItensPedidos++;
@@ -30,7 +31,7 @@ public class Pedido implements Comparable<Pedido>{
         fazerPedido = true;
     }
 
-    // III - Defina UM método COM RETORNO mas SEM PARÂMETROS.
+
 
     double addRefri() {
         numeroItensPedidos();
@@ -38,14 +39,14 @@ public class Pedido implements Comparable<Pedido>{
 
     }
 
-    // IV - Defina UM método COM RETORNO e COM PARÂMETROS.
+
 
     String nomeCliente(String nome) {
 
         return cliente = nome;
     }
 
-    // V - Defina UM método SEM RETORNO e COM PARÂMETROS.
+
     void addLanche(String lanche) {
 
         switch (lanche) {
@@ -71,8 +72,7 @@ public class Pedido implements Comparable<Pedido>{
         }
     }
 
-    // VIII - Para gerar uma String com todos os valores dos atributos da classe, defina o método
-    //toString().
+
 
 
     public String getCliente() {
@@ -128,19 +128,24 @@ public class Pedido implements Comparable<Pedido>{
     }
 
     public static void main(String[] args) {
+
+        System.out.println("----------------------------- Questao 1 -----------------------------\n");
+        // 1. b) Crie um vetor de objetos desta classe e ordene utilizando Arrays.sort().
+
         Pedido[] pedidos = {
                 new Pedido("João","Sundae"),new Pedido("Tiago","Hamburguer"),
                 new Pedido("Maria","Batata")
         };
+            // c) Mostre na tela o print do vetor antes e depois da ordenação.
 
-        System.out.println("Antes da Ordenação por Preço:\n");
+        System.out.println("Vetor Antes da Ordenação por Preço:\n");
 
         for (Pedido i: pedidos){
             System.out.println(i.toString());
         }
-        System.out.println("\nDepois da Ordenção por Preço do Menor pro Maior:\n");
+        System.out.println("\nVetor Depois da Ordenção por Preço do Menor pro Maior:\n");
 
-        Arrays.sort(pedidos);
+        Arrays.sort(pedidos); // Ordenação Arrays.sort()
 
         for (Pedido i: pedidos) {
             System.out.println(i.toString());

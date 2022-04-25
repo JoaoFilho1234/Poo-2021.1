@@ -8,6 +8,6 @@ public class AtletaNatacao extends Atleta implements Nadar{
 
     @Override
     public void nadar() {
-        System.out.println("O Atleta "+getNome()+" Está nadando");
+        System.out.println("O Nadador "+getNome()+" Está nadando");
     }
 }

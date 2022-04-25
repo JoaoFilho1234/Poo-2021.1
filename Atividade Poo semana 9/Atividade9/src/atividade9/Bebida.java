@@ -1,5 +1,6 @@
 package atividade9;
 
+// 2. d) Crie classes que implementam ambas as interfaces.
 public class Bebida implements IPagamento, IDescricao{
 
     private String nomeBebida;
@@ -11,6 +12,7 @@ public class Bebida implements IPagamento, IDescricao{
         this.nomeBebida = nomeBebida;
         numeroDoPedido(numeroPedido);
         formaPagamento(formaPagamento);
+        valorTotal();
     }
 
     public String getNomeBebida() {
@@ -44,8 +46,8 @@ public class Bebida implements IPagamento, IDescricao{
 
     @Override
     public void descricao() {
-        System.out.println("Bebida: "+getNomeBebida()+", Numero: "+getNumeroPedido()+" Valor Total: "+getValorTotal()
-        +"Forma de Pagamento: "+getFormaPagamento());
+        System.out.println("Descrição:\nBebida: "+getNomeBebida()+", Numero: "+getNumeroPedido()+", Valor Total: R$ "+getValorTotal()
+        +", Forma de Pagamento: "+getFormaPagamento());
     }
 
     @Override
@@ -64,4 +66,11 @@ public class Bebida implements IPagamento, IDescricao{
             this.valorTotal = 4.99;
         }
     }
+
+    public static void main(String[] args) {
+        Bebida bebida = new Bebida("Refrigerante",23,"Dinheiro");
+        bebida.descricao();
+    }
+
+
 }

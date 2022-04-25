@@ -1,5 +1,6 @@
 package atividade9;
 
+// 2. d) Crie classes que implementam ambas as interfaces.
 public class Salada implements IDescricao, IPagamento {
 
     private String nomeSalada;
@@ -9,8 +10,9 @@ public class Salada implements IDescricao, IPagamento {
 
     public Salada(String nomeSalada, int numeroPedido, String formaPagamento) {
         this.nomeSalada = nomeSalada;
-        this.numeroPedido = numeroPedido;
-        this.formaPagamento = formaPagamento;
+        numeroDoPedido(numeroPedido);
+        formaPagamento(formaPagamento);
+        valorTotal();
     }
 
     public String getNomeSalada() {
@@ -44,8 +46,8 @@ public class Salada implements IDescricao, IPagamento {
 
     @Override
     public void descricao() {
-        System.out.println("Salada: "+getNomeSalada()+", Numero: "+getNumeroPedido()+" Valor Total: "+getValorTotal()
-                +"Forma de Pagamento: "+getFormaPagamento());
+        System.out.println("Descrição:\nSalada: "+getNomeSalada()+", Numero: "+getNumeroPedido()+", Valor Total: R$ "+getValorTotal()
+                +", Forma de Pagamento: "+getFormaPagamento());
     }
 
     @Override
@@ -63,4 +65,10 @@ public class Salada implements IDescricao, IPagamento {
             this.valorTotal = 6.99;
         }
     }
+
+    public static void main(String[] args) {
+        Salada salada = new Salada("Salada com Carne",13,"Pix");
+        salada.descricao();
+    }
+
 }
