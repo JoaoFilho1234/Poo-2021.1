@@ -7,10 +7,10 @@ public class Sanduiche {
     boolean comparaString;
     Double preco;
 
-    // a) Defina dois construtores distintos para esta classe.
+
     Sanduiche(String nomeSanduiche) {
         this.nomeSanduiche = nomeSanduiche;
-        //this.tamanho = "Medio";
+        this.tamanho = "Medio";
         this.precoSanduiche(nomeSanduiche);
     }
 
@@ -20,6 +20,18 @@ public class Sanduiche {
         this.precoSanduiche(nomeSanduiche);
     }
 
+    // 4. c) Crie um método que lança ambas as exceções criadas.
+    public static void numeroCarnes(int carnes) throws CarnesInsuficienteException, ValorMaximoException {
+        if(carnes < 1){
+            throw new CarnesInsuficienteException(carnes);
+        }
+        if(carnes > 10){
+            throw new ValorMaximoException("Número maximo de carnes atingido");
+        }
+    }
+
+    // 3. Faça um método que lança uma nova exceção, do tipo Exception, com uma
+    //mensagem. Dica: throw new Exception("Mensagem aqui.");
     void numCarnes(int i) throws Exception{
         this.numeroDeCarnes = i;
         if (numeroDeCarnes < 1) {
@@ -28,12 +40,6 @@ public class Sanduiche {
             this.preco += (numeroDeCarnes - 1) * 3.99;
         }
     }
-
-    // b) Compare o atributo String de cada par de
-    //instâncias para ver se tê o mesmo valor e mostre a resposta na saída do console. Faça um
-    //método com retorno booleano que recebe como entrada dois objetos deste tipo. O
-    //método retorna true se os objetos possuem os mesmo valores no seus atributos, caso
-    //contrário retorna false.
 
     boolean isComparaString(Sanduiche sanduiche1, Sanduiche sanduiche2) {
 
@@ -89,26 +95,12 @@ public class Sanduiche {
         }
     }
 
-    // 1 - Crie um método.
-    // a) Deve ser um método estático.
-    // b) Este método deve utilizar passagem de parâmetros por referência (tipo
-    //referenciado).
-    // c) Mostre a alteração dos valores dos atributos do parâmetro (objeto) dentro do
-    //método persiste mesmo depois que a execução do método é encerrada. Exiba o código e
-    //as saídas do programa no relatório.
 
     public static void nomeSanduiche(Sanduiche sanduiche) {
         sanduiche.nomeSanduiche = "Bob's Frango Artesanal";
         System.out.println("Dentro do metodo: "+sanduiche.nomeSanduiche);
     }
 
-    // 2 - Crie um método.
-    // a) Utilize sobrecarga de métodos. Crie outro método com o mesmo nome do
-    //método da questão anterior porém com parâmetros diferentes.
-    // b) Este método deve utilizar passagem de parâmetros por valor (tipo primitivo).
-    // c) Mostre que a alteração do valor o parâmetro dentro do método não persiste
-    //após o final da execução do método. Exiba o código e as saídas do programa no
-    //relatório.
 
     public static void nomeSanduiche(String nome) {
         nome = "Big Bob Frango";
@@ -116,9 +108,23 @@ public class Sanduiche {
     }
 
     public static void main(String[] args) throws Exception {
-        Sanduiche sanduiche = new Sanduiche("Bobs");
-        sanduiche.numCarnes(0);
-        System.out.println(sanduiche.preco);
+
+        // 4. d) Crie um código que chama o método criado e trata ambas as exceções
+        //separadamente. Mostre a saída do console que diferencia cada tipo de exceção.
+
+        Sanduiche sanduiche = new Sanduiche("Cheddar Australiano");
+        //sanduiche.numCarnes(0);
+        //System.out.println(sanduiche.preco);
+        try  {
+            numeroCarnes(2);
+            System.out.println("Suas carnes foram adicionadas ao sanduiche!");
+        }catch (CarnesInsuficienteException e){
+            System.out.println("O número de carnes é insuficiente para preparo do sanduiche!");
+            e.printStackTrace();
+        }catch (ValorMaximoException e){
+            System.out.println("O número maximo de carnes por sanduiche foi antingido!");
+            e.printStackTrace();
+        }
     }
 
 
