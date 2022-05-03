@@ -21,12 +21,12 @@ public class Sanduiche {
     }
 
     // 4. c) Crie um método que lança ambas as exceções criadas.
-    public static void numeroCarnes(int carnes) throws CarnesInsuficienteException, ValorMaximoException {
+    public void numeroCarnes(int carnes) throws CarnesInsuficienteException, NumeroMaximoException {
         if(carnes < 1){
             throw new CarnesInsuficienteException(carnes);
         }
         if(carnes > 10){
-            throw new ValorMaximoException("Número maximo de carnes atingido");
+            throw new NumeroMaximoException("Número maximo de carnes atingido");
         }
     }
 
@@ -109,19 +109,25 @@ public class Sanduiche {
 
     public static void main(String[] args) throws Exception {
 
-        // 4. d) Crie um código que chama o método criado e trata ambas as exceções
-        //separadamente. Mostre a saída do console que diferencia cada tipo de exceção.
+        // QUESTÃO 3 CHAMADA DO METODO QUE LANÇA A NOVA EXCEÇÃO
 
         Sanduiche sanduiche = new Sanduiche("Cheddar Australiano");
-        //sanduiche.numCarnes(0);
-        //System.out.println(sanduiche.preco);
+        sanduiche.numCarnes(0);
+        System.out.println(sanduiche.preco);
+
+
+        // 4. d) Crie um código que chama o método criado e trata ambas as exceções
+        //separadamente. Mostre a saída do console que diferencia cada tipo de exceção.
+        Sanduiche sanduiche2 = new Sanduiche("Fango Tomato Artesanal");
+
+
         try  {
-            numeroCarnes(2);
+            sanduiche2.numeroCarnes(11);
             System.out.println("Suas carnes foram adicionadas ao sanduiche!");
         }catch (CarnesInsuficienteException e){
             System.out.println("O número de carnes é insuficiente para preparo do sanduiche!");
             e.printStackTrace();
-        }catch (ValorMaximoException e){
+        }catch (NumeroMaximoException e){
             System.out.println("O número maximo de carnes por sanduiche foi antingido!");
             e.printStackTrace();
         }
