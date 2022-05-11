@@ -7,6 +7,8 @@ public class Sanduiche implements Item, Serializable {
     private String nome;
     private String tamanho;
     private double preco;
+    private int numeroDeCarnes;
+    private String pontoDaCarne;
 
     int id;
 
@@ -16,6 +18,17 @@ public class Sanduiche implements Item, Serializable {
         setTamanho(tamanho);
         setPreco(preco);
     }
+    void numCarnes(int numeroDeCarnes) {
+        this.numeroDeCarnes = numeroDeCarnes;
+        if (numeroDeCarnes > 1) {
+            this.preco += (numeroDeCarnes - 1) * 3.99;
+        }
+    }
+
+    void pontoCarne(String ponto) {
+        this.pontoDaCarne = ponto;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -40,6 +53,10 @@ public class Sanduiche implements Item, Serializable {
         this.preco = preco;
     }
 
+    @Override
+    public String toString() {
+        return "Sanduiche: "+nome +", Tamanho: "+ tamanho+", Preco: "+preco;
+    }
 
     @Override
     public int getID() {

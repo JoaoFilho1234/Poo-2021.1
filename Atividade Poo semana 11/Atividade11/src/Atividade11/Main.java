@@ -6,7 +6,8 @@ import java.util.Scanner;
 
 public class Main extends RepositorioSanduiche{
 
-    static final String opcoes = "Digite qual operacao voce deseja fazer: ";
+    static final String opcoes = "Digite qual operacao voce deseja fazer: \n1 - Cadastrar Sanduiche. \n2 - Mostrar Sanduiches. " +
+            "\n3 - Sair.\n";
 
     public static void main(String[] args) {
 
@@ -45,12 +46,12 @@ public class Main extends RepositorioSanduiche{
         //ArrayList<Sanduiche> ss = s.sanduiches;
         //ArrayList<Sanduiche> ca = carregarRepositorio();
 
-        RepositorioSanduiche repositorioSanduiche = new RepositorioSanduiche();
+        RepositorioSanduiche repositorioSanduiche = null;
         String arquivoRepositorio = "sanduiches.txt";
         try {
             repositorioSanduiche = RepositorioSanduiche.carregarRepositorio(arquivoRepositorio);
         } catch (IOException e) {
-            System.out.println("N�o foi poss�vel carregar o reposit�rio.");
+            System.out.println("Nao foi possivel carregar o repositorio.");
             repositorioSanduiche = new RepositorioSanduiche();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -62,7 +63,8 @@ public class Main extends RepositorioSanduiche{
 
             if (leitura == 1){
                 System.out.println("Digite o nome do Sanduiche: ");
-                String nome = sc.next();
+                String a = sc.nextLine();
+                String nome = sc.nextLine();
 
                 System.out.println("Digite o tamanho do Sanduiche: ");
                 String tamanho = sc.next();
@@ -70,23 +72,24 @@ public class Main extends RepositorioSanduiche{
                 System.out.println("Digite o preco do Sanduiche: ");
                 double preco = sc.nextDouble();
 
-                Item sanduiche = new Sanduiche(nome,tamanho,preco);
-                repositorioSanduiche.cadastraSanduiche((Sanduiche) sanduiche);
+                Item sanduiche = new Sanduiche2(nome,tamanho,preco);
+                repositorioSanduiche.cadastraSanduiche(sanduiche);
                 // salvando repositorio no arquivo
                 try {
                     repositorioSanduiche.salvarRepositorio(arquivoRepositorio);
                 } catch (IOException e) {
                     e.printStackTrace();
-                    System.out.println("N�o foi poss�vel salvar o arquivo.");
+                    System.out.println("Nao foi poss�vel salvar o arquivo.");
                 }
-            } else if (leitura == 3){
-                for (int i = 0; i<repositorioSanduiche.cont; i++){
+
+            } else if (leitura == 2){
+                for (int i = 0; i< repositorioSanduiche.ultimoID(); i++){
                     Item a = repositorioSanduiche.recuperar(i);
                     System.out.println(a);
                 }
             }
 
-             else if (leitura == 4) {
+             else if (leitura == 3) {
                 continuar = false;
             }
 

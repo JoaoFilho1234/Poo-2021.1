@@ -6,14 +6,14 @@ import java.util.ArrayList;
 
 public class RepositorioSanduiche implements Serializable {
 
-    ArrayList<Sanduiche> sanduiches;
+    ArrayList<Item> sanduiches;
     int cont;
 
     public RepositorioSanduiche() {
-        this.sanduiches = new ArrayList<Sanduiche>();
-        sanduiches.add(new Sanduiche("Frango", "Medio", 12.0));
-        sanduiches.add(new Sanduiche("Bacon", "Pequeno", 2));
-        cont = 2;
+        this.sanduiches = new ArrayList<Item>();
+        //sanduiches.add(new Sanduiche("Bobs Frango", "Medio", 12.0));
+      //sanduiches.add(new Sanduiche("Bacon", "Pequeno", 2.0));
+       cont = 0;
     }
 
     public static ArrayList<Sanduiche> repositorio(Sanduiche sanduiche) {
@@ -23,9 +23,14 @@ public class RepositorioSanduiche implements Serializable {
         //sanduiches1.add(new Sanduiche("Bacon", "Pequeno", 2));
         return sanduiches1;
     }
-    public void cadastraSanduiche(Sanduiche sanduiche){
+    public void cadastraSanduiche(Item sanduiche){
+        sanduiche.setID(cont);
         this.sanduiches.add(sanduiche);
         cont++;
+    }
+
+    public int ultimoID(){
+        return cont;
     }
 
     public Item recuperar(int id) {
@@ -37,10 +42,10 @@ public class RepositorioSanduiche implements Serializable {
     }
 
 
-    public void removeSanduiche(String sanduiche){
+   /* public void removeSanduiche(String sanduiche){
         boolean encontrou = false;
-        for(Sanduiche i: sanduiches){
-            if(i.getNome().equals(sanduiche)){
+        for(Item i: sanduiches){
+            if(i.equals(sanduiche)){
                 sanduiches.remove(i);
                 encontrou = true;
                 System.out.println("Sanduiche "+sanduiche+" removido!");
@@ -50,7 +55,8 @@ public class RepositorioSanduiche implements Serializable {
         if (encontrou == false) {
             System.out.println("Sanduiche "+sanduiche+" não encontrado!");
         }
-    }
+    }*/
+
     public static void mostraSanduiche(ArrayList<Sanduiche> sanduiches){
         for (Sanduiche i: sanduiches){
             System.out.println(i.getNome());
