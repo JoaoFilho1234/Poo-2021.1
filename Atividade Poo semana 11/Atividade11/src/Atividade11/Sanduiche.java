@@ -2,6 +2,8 @@ package Atividade11;
 
 import java.io.Serializable;
 
+// 3- Crie uma classe básica do projeto.
+
 public class Sanduiche implements Item, Serializable {
 
     private String nome;
@@ -12,18 +14,26 @@ public class Sanduiche implements Item, Serializable {
 
     int id;
 
+    // 4- Crie o construtor da classe básica.
 
     public Sanduiche(String nome, String tamanho, double preco) {
         setNome(nome);
         setTamanho(tamanho);
         setPreco(preco);
     }
+
+    // 5- Crie um método que realiza operações úteis para o usuário (não pode ser
+    //métodos do tipo get(), set() ou toString()).
+
     void numCarnes(int numeroDeCarnes) {
         this.numeroDeCarnes = numeroDeCarnes;
         if (numeroDeCarnes > 1) {
             this.preco += (numeroDeCarnes - 1) * 3.99;
         }
     }
+
+    // 6- Crie um segundo método que realiza operações úteis para o usuário (não pode
+    //ser métodos do tipo get(), set() ou toString()).
 
     void pontoCarne(String ponto) {
         this.pontoDaCarne = ponto;
