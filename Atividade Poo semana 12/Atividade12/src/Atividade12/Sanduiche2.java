@@ -2,13 +2,16 @@ package Atividade12;
 
 import java.io.Serializable;
 
-public class Sanduiche2 implements Item, Serializable {
+// 3- b) Pelo menos duas subclasses.
+
+
+public class Sanduiche2 extends Lanche implements Item, Serializable {
 
     int id;
     Sanduiche sanduiche;
 
     public Sanduiche2(String nome, String tamanho, double preco){
-        this.sanduiche = new Sanduiche(nome,tamanho,preco);
+        super(nome,preco,tamanho);
     }
 
     @Override

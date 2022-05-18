@@ -2,9 +2,11 @@ package Atividade12;
 
 import java.io.Serializable;
 
-// 3- Crie uma classe básica do projeto.
+    // 3- b) Pelo menos duas subclasses.
 
-public class Sanduiche extends Lanche implements Item, Serializable {
+    // 4- b) Herança multipla.
+
+public class Sanduiche extends Lanche implements IPagamento, Item, Serializable {
 
     private String nome;
     private String tamanho;
@@ -14,17 +16,14 @@ public class Sanduiche extends Lanche implements Item, Serializable {
 
     int id;
 
-    // 4- Crie o construtor da classe básica.
+
 
     public Sanduiche(String nome, String tamanho, double preco) {
-        super(nome, preco); // Corrigir isso
-        setNome(nome);
-        setTamanho(tamanho);
-        setPreco(preco);
+        super(nome, preco, tamanho);
+
     }
 
-    // 5- Crie um método que realiza operações úteis para o usuário (não pode ser
-    //métodos do tipo get(), set() ou toString()).
+
 
     void numCarnes(int numeroDeCarnes) {
         this.numeroDeCarnes = numeroDeCarnes;
@@ -32,9 +31,6 @@ public class Sanduiche extends Lanche implements Item, Serializable {
             this.preco += (numeroDeCarnes - 1) * 3.99;
         }
     }
-
-    // 6- Crie um segundo método que realiza operações úteis para o usuário (não pode
-    //ser métodos do tipo get(), set() ou toString()).
 
     void pontoCarne(String ponto) {
         this.pontoDaCarne = ponto;
@@ -77,6 +73,16 @@ public class Sanduiche extends Lanche implements Item, Serializable {
     @Override
     public void setID(int id) {
         this.id = id;
+
+    }
+
+    @Override
+    public void formaPagamento(String forma) {
+
+    }
+
+    @Override
+    public void valorTotal() {
 
     }
 }

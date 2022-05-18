@@ -6,10 +6,12 @@ public abstract class Lanche {
 
     private String nome;
     private double preco;
+    private String tamanho;
 
-    public Lanche(String nome, double preco) {
+    public Lanche(String nome, double preco, String tamanho) {
         this.nome = nome;
         this.preco = preco;
+        this.tamanho = tamanho;
     }
 
     public String getNome() {
@@ -26,5 +28,13 @@ public abstract class Lanche {
 
     public void setPreco(double preco) {
         this.preco = preco;
+    }
+
+    public String getTamanho() {
+        return tamanho;
+    }
+
+    public void setTamanho(String tamanho) {
+        this.tamanho = tamanho;
     }
 }

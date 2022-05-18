@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class Main extends RepositorioSanduiche{
 
-    // 10- GUI (interface com usuário), pode ser uma interface em linha de comando.
+    // 5- Atualize a GUI para incluir as novas funções do sistema. Demonstre o
+    //funcionamento do sistema através de prints da tela de saída (console).
     static final String opcoes = "Digite qual operacao voce deseja fazer: \n1 - Cadastrar Sanduiche. \n2 - Mostrar Sanduiches. " +
             "\n3 - Sair.\n";
 
